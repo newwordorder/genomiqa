@@ -1,0 +1,38 @@
+
+.feature-column {
+
+  margin: 15px 0;
+
+  &--boxed {
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+
+    &__inner {
+      padding:20px;
+    }
+
+    .feature-column__image {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .rounded {
+      border-radius: 0 !important;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+
+
+  &__image, &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 70px;
+  }
+}

@@ -1,0 +1,257 @@
+
+#header {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 15px;
+  z-index: 1020;
+  color: #fff;
+  /* animation */
+  opacity: 1;
+  transition: background 0.25s linear;
+  /* fix chrom flicker? */
+  -webkit-backface-visibility: hidden;
+  /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+  transition: 0.4s;
+
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 0px;
+    padding: 0px;
+    background: $white;
+  }
+
+  .header__navigation {
+
+    .active > .nav-link {
+      color: rgba($white,1);
+    }
+
+    li {
+      margin-left: 30px;
+    }
+
+    a {
+      color: rgba($white,.7);
+      transition: 0.2s;
+      padding: 0;
+
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0px;
+        padding: 20px 0px;
+      }
+
+      &:hover {
+        color: rgba($white,1);
+      }
+    }
+  }
+
+}
+
+#header {
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .logo--white {
+    display: block;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .logo--black {
+    display: none;
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  &.-white {
+    .logo--white {
+      display: none;
+    }
+    .logo--black {
+      display: block;
+    }
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 150px;
+  @include media-breakpoint-down(sm) {
+    width: 100px;
+  }
+}
+
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px;
+    border-bottom: none;
+    flex-direction: column;
+  }
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @include media-breakpoint-down(sm) {
+    justify-content: flex-start;
+  }
+
+
+}
+
+.header-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  @include media-breakpoint-down(sm) {
+    display: none;
+    flex-direction: column;
+    &.is-active {
+      display: flex;
+    }
+  }
+  &.is-active {
+    display: flex;
+  }
+}
+
+
+/*--------------------------------------------------------------------------
+*
+*	Header
+*
+*-------------------------------------------------------------------------*/
+#header {
+
+}
+.admin-bar #header {
+  top: 32px;
+}
+#header .menu .menu-item-wrap {
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  /* mobile */
+  /* actions */
+  /* margins */
+}
+
+#header.-white {
+  padding: 10px 15px;
+  color: #2f353e;
+  background: #fff !important;
+  box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0px;
+  }
+
+  .header__navigation {
+
+    .active > .nav-link {
+      color: rgba($dark,1);
+    }
+  }
+
+  a {
+    color: rgba($dark,.7);
+    transition: 0.2s;
+    padding: 0;
+
+    &:hover {
+      color: rgba($dark,1);
+    }
+  }
+
+
+}
+#header.-white .menu h3 i {
+  background-position: -100px 0;
+  width: 67px;
+  height: 32px;
+  margin: -1px 0 0 -1px;
+}
+#header.-white .menu .menu-item:hover,
+#header.-white .menu .menu-item:focus {
+  background: #fafafb !important;
+}
+#header.-white .menu .menu-item.-active:after {
+  content: "";
+  display: block;
+  background: #00dab4;
+  height: 3px;
+  left: 15px;
+  right: 15px;
+  position: absolute;
+  bottom: 0;
+}
+#header.-white .menu .menu-item .count {
+  background: #cbccce;
+}
+#acf-christmas-hat {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 12px;
+  left: 19px;
+}
+
+
+.toggle-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    display: none;
+    .line {
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: $primary;
+        right: 0px;
+        top: 0px;
+        transition: 0.4s;
+        &:nth-of-type(2) {
+            width: 15px;
+            top: 5px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+
+    &.is-active .line {
+        transform: rotate(135deg);
+        top: 5px;
+        &:nth-of-type(2) {
+            width: 20px;
+            top: 5px;
+             transform: rotate(-135deg);
+        }
+    }
+}

@@ -1,0 +1,449 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import "stack";
+@import "typography";
+@import "sections/sections";
+
+body {
+  background: $dark;
+}
+
+.page {
+  background: $white;
+}
+
+section {
+
+  &.bg {
+
+    &--none {
+      background-color: #fff;
+    }
+
+    &--light {
+      background-color: $light;
+    }
+
+    &--dark {
+      background-color: $dark;
+      * {
+        color: #fff;
+      }
+    }
+
+    &--primary {
+      background-color: $primary;
+      * {
+        color: #fff;
+      }
+    }
+
+  }
+
+  &.space {
+
+    &--none {
+      padding: 0;
+    }
+
+    &--sm {
+      padding: 25px 0;
+    }
+
+    &--md {
+      padding: 50px 0;
+    }
+
+    &--lg {
+      padding: 100px 0;
+    }
+
+    &--xlg {
+      padding: 200px 0;
+    }
+
+  }
+
+  &.bg-effect {
+    &--ken-burns{
+        overflow: hidden;
+      & > .background-image-holder,
+      & > img:only-child {
+        animation: kenBurns 15s ease alternate infinite;
+        -webkit-animation: kenBurns 15s ease alternate infinite;
+      }
+    }
+  }
+
+}
+
+.space-below {
+
+  &--none {
+    margin-bottom: 0;
+  }
+
+  &--sm {
+    margin-bottom: 25px;
+  }
+
+  &--md {
+    margin-bottom: 50px;
+  }
+
+  &--lg {
+    margin-bottom: 100px;
+  }
+
+  &--xlg {
+    margin-bottom: 200px;
+  }
+
+}
+
+.flippable {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    order: 1;
+  }
+
+  &__image {
+    order: 2;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+    }
+  }
+
+
+  &--flip {
+    .flippable__text {
+      order: 2;
+    }
+
+    .flippable__image {
+      order: 1;
+
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__text {
+      order: 2;
+    }
+
+    &__image {
+      order: 1;
+    }
+  }
+}
+
+.text-center {
+
+  hr.short {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 0.825em;
+  font-weight: 700;
+  font-family: $font-sans;
+  text-transform: uppercase;
+  color: $primary;
+  padding: 0.8em 1.6em;
+  border-radius: 2em;
+
+  &--solid {
+    background: $primary;
+    color: $white;
+
+    &:hover {
+      background: darken($primary, 10%);
+      color: $white;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+
+  &--link {
+    background: transparent;
+    color: $primary;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:first-of-type {
+      padding: 0.8em 0em;
+    }
+  }
+
+}
+
+.link {
+  background: transparent;
+  color: $primary;
+  font-size: 0.825em;
+  font-weight: 700;
+  font-family: $font-sans;
+  text-transform: uppercase;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.cta {
+
+  &__buttons {
+    text-align: right;
+
+    .buttons {
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+      margin-top: 30px;
+    }
+  }
+
+}
+
+.page-header {
+
+  &--home {
+    padding: 200px 0;
+    height: 80vh;
+    max-height: 800px;
+    min-height: 400px;
+    position: relative;
+
+    & .pos-vertical-center {
+      transform: translateY(-20%);
+    }
+  }
+
+  &--page {
+    padding: 200px 0;
+    height: 50vh;
+    max-height: 800px;
+    min-height: 400px;
+    position: relative;
+
+    & .pos-vertical-center {
+      transform: translateY(-20%);
+    }
+  }
+
+  padding: 200px 0 100px;
+  background-color: $dark;
+
+  @include media-breakpoint-down(sm) {
+    padding: 150px 0 50px;
+  }
+}
+
+.work-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.project-thumb {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 100%;
+  }
+
+  * {
+    transition: 0.2s;
+  }
+
+  &--large {
+    width: 100%;
+
+  }
+
+  &--small {
+    width: 50%;
+
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+  padding: 1.85714286em;
+  z-index: 2;
+  position: absolute;
+  bottom:0;
+
+    & * {
+      color: #fff;
+    }
+  }
+
+  &:hover .background-image-holder {
+    transform: scale(1.1);
+  }
+}
+
+.blog-feed {
+  background-color: $white;
+}
+
+.blog-tile {
+  display: block;
+  margin-bottom: 30px;
+
+  * {
+    transition: 0.2s;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &__thumb {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 66%;
+    margin-bottom: 20px;
+
+    &:hover .background-image-holder {
+      transform: scale(1.1);
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+}
+
+.related-posts {
+  background: $light;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.modal-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+        display: inline-block;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  @include list-unstyled();
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $pagination-hover-color;
+    text-decoration: none;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border-color;
+  }
+
+  &:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: $pagination-focus-box-shadow;
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .page-link elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
+
+.page-item {
+  &:first-child {
+    .page-link {
+      margin-left: 0;
+      border-radius: 100%;
+    }
+  }
+  &:last-child {
+    .page-link {
+      margin-right: 0;
+      border-radius: 100%;
+    }
+  }
+
+  &.active .page-link {
+    z-index: 1;
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border-color;
+  }
+
+  &.disabled .page-link {
+    color: $pagination-disabled-color;
+    pointer-events: none;
+    // Opinionated: remove the "hand" cursor set previously for .page-link
+    cursor: auto;
+    background-color: $pagination-disabled-bg;
+    border-color: $pagination-disabled-border-color;
+  }
+}
+
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+}
