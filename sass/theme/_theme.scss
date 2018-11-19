@@ -154,11 +154,11 @@ section {
 .btn {
   font-size: 0.825em;
   font-weight: 700;
-  font-family: $font-sans;
+  font-family: $moderat-Bold;
   text-transform: uppercase;
   color: $primary;
   padding: 0.8em 1.6em;
-  border-radius: 2em;
+  border-radius: unset;
 
   &--solid {
     background: $primary;
@@ -177,16 +177,33 @@ section {
 
     &:hover {
       background: $primary;
-      color: $white;
+      color:$dark;
+      a{
+      color: $dark !important;
+      }
     }
   }
 
   &--link {
     background: transparent;
-    color: $primary;
+    color: $dark;
+    letter-spacing: 0.05rem;
+
+    i, svg{
+      color:$primary;
+      margin:auto;
+      transition:200ms ease-in-out;
+      margin-left:0.5rem;
+
+    }
 
     &:hover {
       color: darken($primary, 10%);
+      i, svg{
+        margin-left:0.25rem;
+        transition:200ms ease-in-out;
+
+      }
     }
 
     &:focus {
@@ -205,7 +222,7 @@ section {
   color: $primary;
   font-size: 0.825em;
   font-weight: 700;
-  font-family: $font-sans;
+  font-family: $moderat-Regular;
   text-transform: uppercase;
 
   &:hover {

@@ -8,7 +8,7 @@
       $buttonStyle = get_sub_field('button_style');
       ?>
 
-      <a href="<?php echo $url ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php echo $buttonText ?> </a>
+      <a href="<?php echo $url ?>" class="btn btn--<?php echo $buttonStyle ?>"><?php echo $buttonText ?> <?php if($buttonStyle == 'link'): ?><i class="fas fa-arrow-right"></i><?php endif; ?></a>
 
     <?php endwhile; ?>
   </div>

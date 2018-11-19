@@ -24,7 +24,7 @@ if( get_row_layout() == 'feature_columns' ):
 
         <div class="col-md-<?php echo $columns; ?> feature-column">
 
-          <div class="<?php if( $boxed == 'yes' ): ?>feature-column--boxed<?php endif; ?> <?php if( $centered == 'yes' ): ?>text-center<?php endif; ?>">
+          <div class="<?php if( $boxed == 'yes' ): ?>feature-column--boxed<?php endif; ?> <?php if( $centered == 'yes' ): ?>text-center<?php endif; ?> feature-column--standard">
 
             <?php if( $type == 'image' ):
               if( !empty($image) ):

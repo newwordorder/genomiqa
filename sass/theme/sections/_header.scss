@@ -7,7 +7,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 15px;
+  padding: 20px 15px;
+  border-bottom:1px solid #efefef;
   z-index: 1020;
   color: #fff;
   /* animation */
@@ -37,9 +38,10 @@
     }
 
     a {
-      color: rgba($white,.7);
+      color: rgba($white,1);
       transition: 0.2s;
       padding: 0;
+      font-family:$moderat-Bold;
 
 
       @include media-breakpoint-down(sm) {
@@ -85,7 +87,7 @@
 }
 
 .header__logo {
-  display: block;
+  display: flex;
   width: 150px;
   @include media-breakpoint-down(sm) {
     width: 100px;
@@ -124,6 +126,9 @@
   margin: 0;
   list-style: none;
   display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
   @include media-breakpoint-down(sm) {
     display: none;
     flex-direction: column;

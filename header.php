@@ -39,8 +39,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="New Life">
-					<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="New Life">
+					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="genomiqa">
+					<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="genomiqa">
 
 				</a>
 
