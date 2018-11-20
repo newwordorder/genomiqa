@@ -12,33 +12,19 @@
 <footer id="footer">
 		<div class="container text-center">
 
-				<div class="row justify-content-center">
-
-						<div class="col-sm-8">
-								<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h1>
-						</div>
-				</div>
-
 				<div class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-2">
 							<a href="<?php echo get_home_url(); ?>" id="" class="footer__logo">
-								<img class="footer__logo" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="Logo">
+								<img class="footer__logo" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="Logo">
 							</a>
 						</div>
+						<div class="col-sm-4">
+								<p>© Copyright genomiQa PTY LTD </p>
+						</div>
+						<div class="col-sm-6 d-flex justify-content-end">
+								<p><a href="#">Privacy & data Policy</a></p>
+						</div>
 				</div>
-				<div class="row">
-						<div class="col-sm-12">
-								<p>© Copyright New Life Wynyard | <a href="#">Privacy Policy</a> | <a href="#">Site by Rouleur</a> </p>
-						</div>
-						<div class="col-sm-3">
-
-						</div>
-						<div class="col-sm-3">
-
-						</div>
-
-				</div>
-
 </footer>
 
 
@@ -57,6 +43,8 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/ytplayer.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aos.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/slider.js"></script>
+
 
 <script>
 	AOS.init();

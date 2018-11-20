@@ -1,24 +1,20 @@
 #footer {
-    background: $dark;
+    background: #fff;
     font-size: 0.875em;
-    padding: 100px 0;
-
-    .row {
-      margin-bottom: 30px;
-    }
+    padding: 30px 0;
 
     .col-* {
       margin-bottom: 30px;
     }
 
     h1, h2, h3, h4, h5, h6, p {
-        color: #fff;
         margin-bottom: 0;
     }
 
     a, a:visited {
-        color: #fff;
-        text-decoration: underline;
+        font-family:$moderat-Bold;
+        color: $dark;
+        text-decoration: none;
         opacity: 1;
         transition: 0.2s;
     }

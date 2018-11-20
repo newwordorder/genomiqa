@@ -1,0 +1,138 @@
+/* Content */
+
+  .contentContainer {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  /* Images */
+
+  .imgContainer {
+    background: #ffffff;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  /*Slider styles */
+
+  .slidercontainer {
+    width: 100%;
+    height: 36rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Controls */
+
+  .button {
+    width: 24px;
+    height: 24px;
+    background: #ffcb1f;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .button svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .controlContainer {
+    position: absolute;
+    left: calc(50% + 2rem);
+    top: calc(76% - 2.875rem);
+    z-index: 3;
+    display: flex;
+  }
+
+  /* Content */
+
+  .contentContainer {
+    width: 76%;
+    height: 24rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 2rem;
+  }
+
+  .contentContainer .slide {
+    width: 60%;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .contentContainer * {
+    color: #fff;
+  }
+
+  /* Images */
+
+  .imgContainer {
+    position: absolute;
+    top: 20%;
+    width: 24rem;
+    overflow: hidden;
+    height: 34rem;
+    z-index: 2;
+    background-color: #3b4051;
+  }
+
+  .imgContainer img {
+    opacity: 0;
+  }
+
+  .imgContainer--1 {
+    left: 50%;
+    z-index: 3;
+  }
+
+  .imgContainer--2 {
+    left: 68%;
+    z-index: 2;
+    top: 30%;
+  }
+
+  .img {
+    animation: animateOut;
+    animation-fill-mode: forwards;
+    animation-duration: 600ms;
+  }
+
+  .active {
+    opacity: 1;
+    animation: animateIn;
+    animation-fill-mode: forwards;
+    animation-duration: 600ms;
+    z-index: 2;
+  }
+
+  @keyframes animateIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animateOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

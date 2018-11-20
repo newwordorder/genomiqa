@@ -172,7 +172,7 @@ section {
 
   &--outline {
     background: transparent;
-    color: $primary;
+    color: $body-color;
     border: 1px solid $primary;
 
     &:hover {
@@ -463,4 +463,8 @@ section {
 
 .pagination-sm {
   @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+}
+
+.tooltip{
+  display:none !important;
 }
