@@ -8671,10 +8671,11 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2; }
+  z-index: -1; }
 
 [data-overlay] *:not(.container):not(.background-image-holder) {
-  z-index: 3; }
+  /*   z-index: 3;
+ */ }
 
 [data-overlay].image--light:before {
   background: #fff; }
@@ -17348,7 +17349,9 @@ hr.short {
   position: relative; }
 
 .img {
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: unset;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17357,8 +17360,8 @@ hr.short {
 
 /* Controls */
 .button {
-  width: 24px;
-  height: 24px;
+  width: 4rem;
+  height: 4rem;
   background: #ffcb1f;
   position: relative;
   cursor: pointer; }
@@ -17369,23 +17372,24 @@ hr.short {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 0.5rem;
-  height: 0.5rem; }
+  width: 1.125rem;
+  height: 1.125rem; }
 
 .controlContainer {
   position: absolute;
   left: calc(50% + 2rem);
-  top: calc(76% - 2.875rem);
-  z-index: 3;
+  bottom: 0;
+  z-index: 4 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
+.leftControl {
+  margin-right: 1px; }
+
 /* Content */
 .contentContainer {
-  width: 76%;
   height: 24rem;
-  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -17393,7 +17397,7 @@ hr.short {
   padding: 2rem; }
 
 .contentContainer .slide {
-  width: 60%;
+  width: 80%;
   position: absolute;
   opacity: 0; }
 
@@ -17402,9 +17406,6 @@ hr.short {
 
 /* Images */
 .imgContainer {
-  position: absolute;
-  top: 20%;
-  width: 24rem;
   overflow: hidden;
   height: 34rem;
   z-index: 2;
@@ -17414,13 +17415,11 @@ hr.short {
   opacity: 0; }
 
 .imgContainer--1 {
-  left: 50%;
   z-index: 3; }
 
 .imgContainer--2 {
-  left: 68%;
   z-index: 2;
-  top: 30%; }
+  top: 10%; }
 
 .img {
   -webkit-animation: animateOut;
@@ -17643,9 +17642,6 @@ section.bg-effect--ken-burns {
     max-height: 800px;
     min-height: 400px;
     position: relative; }
-    .page-header--home .pos-vertical-center {
-      -webkit-transform: translateY(-20%);
-              transform: translateY(-20%); }
   .page-header--page {
     padding: 200px 0;
     height: 50vh;

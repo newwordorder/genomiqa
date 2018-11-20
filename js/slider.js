@@ -53,6 +53,8 @@ var slider = function slider(_ref) {
 
   contentContainer.classList.add("contentContainer");
 
+  contentContainer.classList.add("col-md-6");
+
   content.forEach(function (content, index) {
     return contentContainer.appendChild(makeContent({ content: content, index: index }));
   });
@@ -89,9 +91,15 @@ var slider = function slider(_ref) {
 
   imgContainer.classList.add("imgContainer--1");
 
+  imgContainer.classList.add("col-md-4");
+
+
   output.appendChild(imgContainer);
 
   imgContainer2.classList.add("imgContainer--2");
+
+  imgContainer2.classList.add("col-md-4");
+
 
   output.appendChild(imgContainer2);
 
