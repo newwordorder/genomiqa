@@ -22,6 +22,8 @@ $invertColours = $backgroundImage['invert_colours'];
 
 $video = get_field('youtube_code');
 $fallbackImage = get_field('fallback_image');
+
+$slider = get_field('slider');
 ?>
 
 <section id="sub-header"
@@ -60,6 +62,25 @@ data-overlay="<?php echo $imageOverlay ?>"
     </div>
   <?php endif; ?>
 <?php endif; ?>
+<?php if(have_rows('slides')):
+
+      $images_left = array();
+      $images_right = array();
+      $contents = array();
+
+      while ( have_rows('slides') ) : the_row();
+
+      $image_left = get_sub_field('image_left')['url'];
+      array_push($images_left, $image_left);
+
+      $image_right = get_sub_field('image_right')['url'];
+      array_push($images_right, $image_right);
+
+      $content = get_sub_field('content');
+      array_push($contents, $content);
+
+          endwhile; 
+          endif; ?> 
 <div class="container pos-vertical-center">
   <div class="row justify-content-center">
     <div class="col-md-12 text-center" id="slider">
@@ -69,7 +90,13 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 <script>
   jQuery( document ).ready(function(){
-    const images = [
+
+    var images = <?php echo json_encode($images_left); ?>;
+    var images2 = <?php echo json_encode($images_right); ?>;
+    var content = <?php echo json_encode($contents); ?>;
+
+
+   /*  const images = [
       "https://images.unsplash.com/photo-1487235829740-e0ac5a286e1c?ixlib=rb-0.3.5&s=d7b2968dc15cecb41656e1fa50c9bbf0&auto=format&fit=crop&w=1648&q=80",
       "https://images.unsplash.com/photo-1494861895304-fb272971c078?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=863877d7e1253ce5b2d81e086f23ec52&auto=format&fit=crop&w=1650&q=80",
       "https://images.unsplash.com/photo-1529641484336-ef35148bab06?ixlib=rb-0.3.5&s=7933ac78162b72ea5702f717bce062bd&auto=format&fit=crop&w=1650&q=80",
@@ -86,7 +113,7 @@ data-overlay="<?php echo $imageOverlay ?>"
     ];
 
     const content = ["<p>1</p>", "<p>2</p>", "<p>3</p>", "<p>4</p>", "<p>5</p>"];
-
+ */
     const newSlider = slider({ images, images2, content });
 
     const body = document.querySelector("#slider");

@@ -89,9 +89,15 @@ var slider = function slider(_ref) {
 
   output.classList.add("slidercontainer");
 
+  output.classList.add("row");
+
+
   imgContainer.classList.add("imgContainer--1");
 
   imgContainer.classList.add("col-md-4");
+  
+  output.appendChild(contentContainer);
+
 
 
   output.appendChild(imgContainer);
@@ -100,12 +106,10 @@ var slider = function slider(_ref) {
 
   imgContainer2.classList.add("col-md-4");
 
-
   output.appendChild(imgContainer2);
 
   output.appendChild(makeControls());
 
-  output.appendChild(contentContainer);
 
   return output;
 };

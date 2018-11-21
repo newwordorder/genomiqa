@@ -177,7 +177,7 @@ section {
 
     &:hover {
       background: $primary;
-      color:$dark;
+      color:$dark !important;
       a{
       color: $dark !important;
       }
@@ -254,7 +254,7 @@ section {
 .page-header {
 
   &--home {
-    padding: 200px 0;
+    padding: 400px 0;
     height: 80vh;
     max-height: 800px;
     min-height: 400px;
