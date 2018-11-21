@@ -22,6 +22,8 @@ $invertColours = $backgroundImage['invert_colours'];
 
 $video = get_field('youtube_code');
 $fallbackImage = get_field('fallback_image');
+
+$slider = get_field('slider');
 ?>
 
 <section id="sub-header"
@@ -60,16 +62,49 @@ data-overlay="<?php echo $imageOverlay ?>"
     </div>
   <?php endif; ?>
 <?php endif; ?>
+<?php if(have_rows('slides')):
+
+      $images_left = array();
+      $images_right = array();
+      $contents = array();
+
+      while ( have_rows('slides') ) : the_row();
+
+      $image_left = get_sub_field('image_left')['url'];
+      array_push($images_left, $image_left);
+
+      $image_right = get_sub_field('image_right')['url'];
+      array_push($images_right, $image_right);
+
+      $content = get_sub_field('content');
+      array_push($contents, $content);
+
+          endwhile; 
+          endif; ?> 
 <div class="container pos-vertical-center">
   <div class="row justify-content-center">
-    <div class="col-md-10 text-center">
-
-      <h1 class="h6"><?php the_title(); ?></h1>
-      <h1 class="page-title">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-
+    <div class="col-md-12 text-center" id="slider">
     </div>
   </div>
 </div>
+
+<script>
+  jQuery( document ).ready(function(){
+
+    var images = <?php echo json_encode($images_left); ?>;
+    var images2 = <?php echo json_encode($images_right); ?>;
+    var content = <?php echo json_encode($contents); ?>;
+
+    const newSlider = slider({ images, images2, content });
+
+    const body = document.querySelector("#slider");
+
+    body.appendChild(newSlider);
+
+    init();
+
+  });
+</script>
 
 
 

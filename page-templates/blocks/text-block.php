@@ -11,7 +11,7 @@ if( get_row_layout() == 'text_block' ):
 
 <div class="container space-below--<?php echo $spaceBelow ?>">
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-12">
 
         <?php echo $textBlock ?>
 

@@ -23,6 +23,13 @@
     }
   }
 
+  &--standard{
+    border-top: 4px solid $primary;
+    padding: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+  }
+
   @include media-breakpoint-down(sm) {
     margin-bottom: 30px;
   }

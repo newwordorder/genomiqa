@@ -23,7 +23,7 @@ $spaceBelow = get_sub_field('space_below');
   <div class="container space-below--<?php echo $spaceBelow ?>">
 
       <div class="row flippable <?php if( $flipLayout == 'yes' ): echo 'flippable--flip'; endif; ?>">
-          <div class=" flippable__text <?php if( $layout == '1/3' ): echo 'col-md-8'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-4'; endif; ?>">
+          <div class=" flippable__text <?php if( $layout == '1/3' ): echo 'col-md-9'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-7'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-5'; endif; ?>" >
               <?php echo $text ?>
               <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>
           </div>
@@ -37,7 +37,7 @@ $spaceBelow = get_sub_field('space_below');
                 $alt = $image['alt'];
 
                ?>
-                <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
               <?php endif; //end $image ?>
 
             <?php endif; //end $media ?>
@@ -48,8 +48,8 @@ $spaceBelow = get_sub_field('space_below');
 
             <?php if( $media == 'video' ): ?>
 
-              <div class="video-cover rounded">
-              	<div class="background-image-holder rounded">
+              <div class="video-cover ">
+              	<div class="background-image-holder ">
                   <?php if( !empty($videoCoverImage) ):
 
                     // vars
@@ -57,11 +57,11 @@ $spaceBelow = get_sub_field('space_below');
                     $alt = $videoCoverImage['alt'];
 
                    ?>
-                    <img class="rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <img class="" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
                   <?php endif; //end $image ?>
               	</div>
               	<div class="video-play-icon video-play-icon--sm"></div>
-                <div class="embed-container rounded">
+                <div class="embed-container ">
               	   <?php echo $videoEmbedCode; ?>
                 </div>
               </div><!--end video cover-->
