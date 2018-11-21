@@ -23,8 +23,7 @@ $spaceBelow = get_sub_field('space_below');
   <div class="container space-below--<?php echo $spaceBelow ?>">
 
       <div class="row flippable <?php if( $flipLayout == 'yes' ): echo 'flippable--flip'; endif; ?>">
-          <div class=" flippable__text <?php if( $layout == '1/3' ): echo 'col-md-9'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-7'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-5'; endif; ?>" style="margin-left:-6rem; z-index:2; background-color:#fff; padding:2rem; background: #FFFFFF;
-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.05);">
+          <div class=" flippable__text <?php if( $layout == '1/3' ): echo 'col-md-9'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-7'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-5'; endif; ?>" >
               <?php echo $text ?>
               <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>
           </div>

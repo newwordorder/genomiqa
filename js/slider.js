@@ -53,7 +53,10 @@ var slider = function slider(_ref) {
 
   contentContainer.classList.add("contentContainer");
 
-  contentContainer.classList.add("col-md-6");
+  contentContainer.classList.add("col-12");
+
+  contentContainer.classList.add("col-lg-6");
+
 
   content.forEach(function (content, index) {
     return contentContainer.appendChild(makeContent({ content: content, index: index }));
@@ -94,7 +97,9 @@ var slider = function slider(_ref) {
 
   imgContainer.classList.add("imgContainer--1");
 
-  imgContainer.classList.add("col-md-4");
+  imgContainer.classList.add("col-12");
+
+  imgContainer.classList.add("col-lg-4");
   
   output.appendChild(contentContainer);
 
@@ -103,8 +108,11 @@ var slider = function slider(_ref) {
   output.appendChild(imgContainer);
 
   imgContainer2.classList.add("imgContainer--2");
+  
+  imgContainer2.classList.add("col-12");
 
-  imgContainer2.classList.add("col-md-4");
+
+  imgContainer2.classList.add("col-lg-4");
 
   output.appendChild(imgContainer2);
 
