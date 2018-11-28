@@ -12,9 +12,7 @@ body {
 }
 
 section {
-
   &.bg {
-
     &--none {
       background-color: #fff;
     }
@@ -36,11 +34,9 @@ section {
         color: #fff;
       }
     }
-
   }
 
   &.space {
-
     &--none {
       padding: 0;
     }
@@ -60,12 +56,11 @@ section {
     &--xlg {
       padding: 200px 0;
     }
-
   }
 
   &.bg-effect {
-    &--ken-burns{
-        overflow: hidden;
+    &--ken-burns {
+      overflow: hidden;
       & > .background-image-holder,
       & > img:only-child {
         animation: kenBurns 15s ease alternate infinite;
@@ -73,11 +68,9 @@ section {
       }
     }
   }
-
 }
 
 .space-below {
-
   &--none {
     margin-bottom: 0;
   }
@@ -97,7 +90,6 @@ section {
   &--xlg {
     margin-bottom: 200px;
   }
-
 }
 
 .flippable {
@@ -112,29 +104,26 @@ section {
     order: 2;
 
     @include media-breakpoint-down(sm) {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 
-
   &--flip {
     .flippable__text {
-
-    margin-left: -6rem; 
-    z-index: 2;
-    background-color: #fff;
-    padding: 2rem;
-    background: #FFFFFF;
-    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.05);
-    @media screen and (max-width: 768px){
-      margin-left:0;
-    }
+      margin-left: -6rem;
+      z-index: 2;
+      background-color: #fff;
+      padding: 2rem;
+      background: #ffffff;
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+      }
       order: 2;
     }
 
     .flippable__image {
       order: 1;
-
     }
   }
 
@@ -150,7 +139,6 @@ section {
 }
 
 .text-center {
-
   hr.short {
     margin-left: auto;
     margin-right: auto;
@@ -187,9 +175,9 @@ section {
 
     &:hover {
       background: $primary;
-      color:$dark !important;
-      a{
       color: $dark !important;
+      a {
+        color: $dark !important;
       }
     }
   }
@@ -199,20 +187,20 @@ section {
     color: $dark;
     letter-spacing: 0.05rem;
 
-    i, svg{
-      color:$primary;
-      margin:auto;
-      transition:200ms ease-in-out;
-      margin-left:0.5rem;
-
+    i,
+    svg {
+      color: $primary;
+      margin: auto;
+      transition: 200ms ease-in-out;
+      margin-left: 0.5rem;
     }
 
     &:hover {
       color: darken($primary, 10%);
-      i, svg{
-        margin-left:0.25rem;
-        transition:200ms ease-in-out;
-
+      i,
+      svg {
+        margin-left: 0.25rem;
+        transition: 200ms ease-in-out;
       }
     }
 
@@ -224,7 +212,6 @@ section {
       padding: 0.8em 0em;
     }
   }
-
 }
 
 .link {
@@ -245,7 +232,6 @@ section {
 }
 
 .cta {
-
   &__buttons {
     text-align: right;
 
@@ -258,11 +244,9 @@ section {
       margin-top: 30px;
     }
   }
-
 }
 
 .page-header {
-
   &--home {
     padding: 400px 0;
     height: 80vh;
@@ -271,11 +255,11 @@ section {
     position: relative;
     @include media-breakpoint-down(md) {
       height: 40vh;
-      padding:0px;
+      padding: 0px;
     }
 
     @include media-breakpoint-down(sm) {
-      height:100%;
+      height: 100%;
     }
 
     & .pos-vertical-center {
@@ -288,7 +272,7 @@ section {
     max-height: 800px;
     min-height: 400px;
     position: relative;
-   
+
     & .pos-vertical-center {
       transform: translateY(-20%);
     }
@@ -324,12 +308,10 @@ section {
 
   &--large {
     width: 100%;
-
   }
 
   &--small {
     width: 50%;
-
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -337,10 +319,10 @@ section {
   }
 
   &__title {
-  padding: 1.85714286em;
-  z-index: 2;
-  position: absolute;
-  bottom:0;
+    padding: 1.85714286em;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
 
     & * {
       color: #fff;
@@ -383,14 +365,28 @@ section {
   p {
     margin-bottom: 20px;
   }
-
 }
 
 .related-posts {
   background: $light;
 }
 
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .modal-video {
   display: flex;
@@ -398,7 +394,7 @@ section {
   justify-content: center;
 
   &__text {
-        display: inline-block;
+    display: inline-block;
   }
 }
 
@@ -469,19 +465,95 @@ section {
   }
 }
 
-
 //
 // Sizing
 //
 
 .pagination-lg {
-  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+  @include pagination-size(
+    $pagination-padding-y-lg,
+    $pagination-padding-x-lg,
+    $font-size-lg,
+    $line-height-lg,
+    $border-radius-lg
+  );
 }
 
 .pagination-sm {
-  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+  @include pagination-size(
+    $pagination-padding-y-sm,
+    $pagination-padding-x-sm,
+    $font-size-sm,
+    $line-height-sm,
+    $border-radius-sm
+  );
 }
 
-.tooltip{
-  display:none !important;
+.tooltip {
+  display: none !important;
+}
+
+.product {
+  position: relative;
+  margin-bottom:2rem;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+
+  &--tile {
+    min-height: 18rem;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .entry-title {
+    position: relative;
+    margin-bottom:1rem;
+    a {
+      color: #fff;
+    }
+    &:after {
+      content: "TM";
+      font-size: 0.8rem;
+      top: 0;
+      position: absolute;
+      color: #fff;
+    }
+  }
+
+  .entry-subtitle{
+    z-index:3;
+    font-family:$moderat-Regular;
+    position:inherit;
+    font-size: 1.5em;
+    line-height:1.2;
+  }
+
+  &--button{
+    background-color:#fff;
+    height:4rem;
+    position:relative;
+    width:100%;
+    bottom:0;
+    left:0;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    p{
+      svg{
+        position:absolute;
+        right:1rem;
+        top:50%;
+        transform:translateY(-50%);
+        color:$primary;
+      }
+      width:calc(100% - 2rem);
+      font-family: $moderat-Bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+[data-overlay] *:not(.container):not(.background-image-holder) {
+   z-index: 3; 
 }

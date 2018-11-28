@@ -8671,7 +8671,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; }
+  z-index: 2; }
 
 [data-overlay] *:not(.container):not(.background-image-holder) {
   /*   z-index: 3;
@@ -17262,6 +17262,9 @@ hr.short {
       -webkit-transform: rotate(-135deg);
               transform: rotate(-135deg); }
 
+.page-header * {
+  color: #fff; }
+
 #footer {
   background: #fff;
   font-size: 0.875em;
@@ -17631,7 +17634,7 @@ section.bg-effect--ken-burns {
     z-index: 2;
     background-color: #fff;
     padding: 2rem;
-    background: #FFFFFF;
+    background: #ffffff;
     -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
             box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     -webkit-box-ordinal-group: 3;
@@ -17689,7 +17692,8 @@ section.bg-effect--ken-burns {
     background: transparent;
     color: #3B4051;
     letter-spacing: 0.05rem; }
-    .btn--link i, .btn--link svg {
+    .btn--link i,
+    .btn--link svg {
       color: #FFCB1F;
       margin: auto;
       -webkit-transition: 200ms ease-in-out;
@@ -17697,7 +17701,8 @@ section.bg-effect--ken-burns {
       margin-left: 0.5rem; }
     .btn--link:hover {
       color: #ebb400; }
-      .btn--link:hover i, .btn--link:hover svg {
+      .btn--link:hover i,
+      .btn--link:hover svg {
         margin-left: 0.25rem;
         -webkit-transition: 200ms ease-in-out;
         transition: 200ms ease-in-out; }
@@ -17828,7 +17833,9 @@ section.bg-effect--ken-burns {
   overflow: hidden;
   max-width: 100%; }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -17936,6 +17943,68 @@ section.bg-effect--ken-burns {
 
 .tooltip {
   display: none !important; }
+
+.product {
+  position: relative;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05); }
+  .product--tile {
+    min-height: 18rem;
+    padding: 2rem;
+    position: relative; }
+  .product .entry-title {
+    position: relative;
+    margin-bottom: 1rem; }
+    .product .entry-title a {
+      color: #fff; }
+    .product .entry-title:after {
+      content: "TM";
+      font-size: 0.8rem;
+      top: 0;
+      position: absolute;
+      color: #fff; }
+  .product .entry-subtitle {
+    z-index: 3;
+    font-family: "Moderat Regular", sans-serif;
+    position: inherit;
+    font-size: 1.5em;
+    line-height: 1.2; }
+  .product--button {
+    background-color: #fff;
+    height: 4rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product--button p {
+      width: calc(100% - 2rem);
+      font-family: "Moderat Bold", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      .product--button p svg {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        color: #FFCB1F; }
+
+[data-overlay] *:not(.container):not(.background-image-holder) {
+  z-index: 3; }
 
 /*
 * Use existing Bootstrap 4 classes and
