@@ -54,28 +54,48 @@ if( !empty($image) ):
 
 
 
-<section class="related-posts">
+<section class="related-posts" style="background:url('http://genomiqa.local/wp-content/uploads/2018/11/bg.png')">
   <div class="container">
     <div class="row">
       <div class="col">
-      <h6 class="subTitle">The full picture</h6>
-
+        <h6 class="subTitle">The full picture</h6>
         <h2>Other products and services</h2>
-
+      </div>
+    </div>
+    <div class="row">
           <?php
-          $args = array('exclude' => get_the_ID(), 'post_type' => 'products'); 
-            $posts = get_posts( $args );
-            print_r($posts);
+
+          $currentID = get_the_ID();
+
+          $args = array(
+              'post__not_in' => array($currentID),
+              'showposts' => '2',
+              'post_type'=> 'product',
+              'orderby' => 'rand'
+              );
+
+          $the_query = new WP_Query( $args );
+
+          if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();  
+          ?>
+
+            <div class='col-md-6'>
+              <?php
+
+                get_template_part( 'loop-templates/content-product', get_post_format() );
+
+              ?>
+            </div>
+
+          <?php endwhile; endif;
           /*
            * Include the Post-Format-specific template for the content.
            * If you want to override this in a child theme, then include a file
            * called content-___.php (where ___ is the Post Format name) and that will be used instead.
            */
-          get_template_part( 'loop-templates/content-product', get_post_format() );
           ?>
       </div>
     </div>
-  </div>
 
 
 </section>

@@ -7,7 +7,6 @@
 
 ?>
 
-<div class="col-md-4" id="post-<?php the_ID(); ?>">
 <div class="product">
 	<div class="product--tile" style="background: url('<?php echo get_the_post_thumbnail_url( $post->ID ); ?>'); background-size:cover;" data-overlay="4">
 		<?php the_title( sprintf( '<h5 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
@@ -19,4 +18,3 @@
 				<p>Learn more <i class="far fa-arrow-right"></i></p>
 </a>
 </div>
-</div><!-- #post-## -->
