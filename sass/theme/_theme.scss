@@ -550,3 +550,64 @@ section {
 [data-overlay] *:not(.container):not(.background-image-holder) {
    z-index: 3; 
 }
+
+.wpcf7{
+  max-width:unset !important;
+
+  *{
+    text-transform:uppercase;
+    font-family:$moderat-Bold;
+    letter-spacing: 2px;
+  }
+
+  .wpcf7-submit{
+    border: 1px solid $primary !important;
+  }
+
+  input{
+    border: none !important;
+    border-radius:0;
+  }
+
+  textarea{
+    border: none !important;
+    border-radius:0;
+
+  }
+  .d-flex{
+    label{
+      margin:0px 10px;
+    }
+  }
+  input[type="checkbox"]{
+    -webkit-appearance: checkbox;
+    width:20px;
+    margin-right:10px;
+  }
+  input[type="submit"]{
+    margin:0px 10px;
+    color:$dark;
+  }
+  .wpcf7-list-item{
+    display:flex;
+  }
+  .wpcf7-list-item-label{
+    display: flex;
+    align-items: center;
+  }
+  .ajax-loader{
+    display:none !important;
+  }
+}
+
+#wpcf7-f282-o2{
+  input[type="submit"]{
+    margin:0px;
+    border: 1px solid $primary !important;
+
+  }
+  input{
+    border: 1px solid #efefef !important;
+    border-radius:0px;
+  }
+}
