@@ -69,3 +69,10 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+
+
+/**
+ * Load more button.
+ */
+require get_template_directory() . '/inc/loadmore.php';

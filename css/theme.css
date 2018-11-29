@@ -17027,7 +17027,6 @@ hr.short {
   left: 0;
   width: 100%;
   padding: 20px 15px;
-  border-bottom: 1px solid #efefef;
   z-index: 1020;
   color: #fff;
   /* animation */
@@ -17305,7 +17304,8 @@ hr.short {
     padding: 1rem;
     background: #FFFFFF;
     -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
-            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05); }
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+    height: 100%; }
   @media (max-width: 767.98px) {
     .feature-column {
       margin-bottom: 30px; } }
@@ -18055,6 +18055,33 @@ section.bg-effect--ken-burns {
 #wpcf7-f282-o2 input {
   border: 1px solid #efefef !important;
   border-radius: 0px; }
+
+.blog-tile__details {
+  padding: 1rem; }
+
+.blog-tile--inner {
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05); }
+  .blog-tile--inner svg {
+    margin: unset !important; }
+
+.blog-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .blog-categories * {
+    margin: 0px 1rem;
+    color: #3B4051; }
 
 /*
 * Use existing Bootstrap 4 classes and

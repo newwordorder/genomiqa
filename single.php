@@ -17,7 +17,7 @@ $invertColours = $backgroundImage['invert_colours'];
 <section id="sub-header"
 
 class="page-header page-header--work bg-effect--<?php echo $backgroundEffect ?> imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
-data-overlay="<?php echo $imageOverlay ?>"
+data-overlay="5"
 >
 
 <?php
@@ -36,9 +36,13 @@ if( !empty($image) ):
 
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8 text-center">
+    <div class="col-lg-12 col-md-12 ">
+    <h6 class="subTitle"><?php global $wp_query;
+    $category_detail =  get_the_category($wp_query->post->ID); foreach($category_detail as $cd){
+  echo $cd->cat_name;
+  } ?></h6>
 
-      <h1 class="page-title"><?php the_title(); ?></h1>
+      <h3 class="page-title"><?php the_title(); ?></h3>
 
 
     </div>
@@ -48,70 +52,9 @@ if( !empty($image) ):
 
 
 </section>
+<!-- oi -->
+    <?php get_template_part( 'page-templates/postblocks' ); ?>
 
-<section id="single-wrapper">
-
-	<div class="container" id="content" tabindex="-1">
-
-
-
-			<main id="main">
-
-
-
-					<?php the_content();
-
-          // check if the flexible content field has rows of data
-          if( have_rows('posts_blocks') ):
-
-            // loop through the rows of data
-            while ( have_rows('posts_blocks') ) : the_row();
-
-
-
-            if( get_row_layout() == 'text_block' ): ?>
-
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-
-                <?php  the_sub_field('text_block'); ?>
-
-              </div>
-            </div>
-
-          <?php  endif;
-
-
-            endwhile;
-
-          endif;
-
-          ?>
-
-
-
-
-
-			</main><!-- #main -->
-
-
-
-
-</div><!-- Container end -->
-
-</section><!-- Wrapper end -->
-
-<section class="related-posts">
-  <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <h2>Related posts</h2>
-      </div>
-    </div>
-  </div>
-
-
-</section>
 
 <?php endwhile; // end of the loop. ?>
 
