@@ -578,12 +578,12 @@ img {
 [data-overlay]:before {
   position: absolute;
   content: '';
-  background: #252525;
+  background: #3B4051;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 2;
 }
 [data-overlay] *:not(.container):not(.background-image-holder) {
 /*   z-index: 3;
