@@ -17343,7 +17343,11 @@ hr.short {
   margin-left: -6rem;
   background-color: #fff;
   -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05); }
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  z-index: 4 !important; }
+  .overlap * {
+    color: #3B4051 !important; }
   @media screen and (max-width: 768px) {
     .overlap {
       margin-left: 0; } }
@@ -18006,6 +18010,51 @@ section.bg-effect--ken-burns {
 
 [data-overlay] *:not(.container):not(.background-image-holder) {
   z-index: 3; }
+
+.wpcf7 {
+  max-width: unset !important; }
+  .wpcf7 * {
+    text-transform: uppercase;
+    font-family: "Moderat Bold", sans-serif;
+    letter-spacing: 2px; }
+  .wpcf7 .wpcf7-submit {
+    border: 1px solid #FFCB1F !important; }
+  .wpcf7 input {
+    border: none !important;
+    border-radius: 0; }
+  .wpcf7 textarea {
+    border: none !important;
+    border-radius: 0; }
+  .wpcf7 .d-flex label {
+    margin: 0px 10px; }
+  .wpcf7 input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    width: 20px;
+    margin-right: 10px; }
+  .wpcf7 input[type="submit"] {
+    margin: 0px 10px;
+    color: #3B4051; }
+  .wpcf7 .wpcf7-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .wpcf7 .wpcf7-list-item-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .wpcf7 .ajax-loader {
+    display: none !important; }
+
+#wpcf7-f282-o2 input[type="submit"] {
+  margin: 0px;
+  border: 1px solid #FFCB1F !important; }
+
+#wpcf7-f282-o2 input {
+  border: 1px solid #efefef !important;
+  border-radius: 0px; }
 
 /*
 * Use existing Bootstrap 4 classes and
