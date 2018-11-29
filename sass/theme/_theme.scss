@@ -110,15 +110,8 @@ section {
 
   &--flip {
     .flippable__text {
-      margin-left: -6rem;
       z-index: 2;
-      background-color: #fff;
       padding: 2rem;
-      background: #ffffff;
-      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-      @media screen and (max-width: 768px) {
-        margin-left: 0;
-      }
       order: 2;
     }
 

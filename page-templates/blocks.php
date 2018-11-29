@@ -25,6 +25,8 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/blocks/feature-tiles' );
          get_template_part( 'page-templates/blocks/line-break' );
          get_template_part( 'page-templates/blocks/projects' );
+         get_template_part( 'page-templates/blocks/text-text' );
+
 
       }
 

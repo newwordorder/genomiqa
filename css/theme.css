@@ -8666,7 +8666,7 @@ img {
 [data-overlay]:before {
   position: absolute;
   content: '';
-  background: #252525;
+  background: #3B4051;
   width: 100%;
   height: 100%;
   top: 0;
@@ -17339,6 +17339,15 @@ hr.short {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
 
+.overlap {
+  margin-left: -6rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05); }
+  @media screen and (max-width: 768px) {
+    .overlap {
+      margin-left: 0; } }
+
 /* Content */
 /* Images */
 .imgContainer {
@@ -17630,19 +17639,11 @@ section.bg-effect--ken-burns {
       .flippable__image {
         margin-bottom: 30px; } }
   .flippable--flip .flippable__text {
-    margin-left: -6rem;
     z-index: 2;
-    background-color: #fff;
     padding: 2rem;
-    background: #ffffff;
-    -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
-    @media screen and (max-width: 768px) {
-      .flippable--flip .flippable__text {
-        margin-left: 0; } }
   .flippable--flip .flippable__image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
