@@ -100,6 +100,7 @@
   max-width: 1140px;
   margin: 0 auto;
   width: 100%;
+  padding: 0px 15px;
 
   @include media-breakpoint-down(sm) {
     padding: 15px;

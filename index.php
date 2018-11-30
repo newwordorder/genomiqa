@@ -37,7 +37,7 @@ class="page-header page-header--work bg--dark" >
 	<div class="container">
 		<div class="row justify-content-center mb-5">
 			<div class="col-md-8 text-center">
-				
+
 				<?php
 				$categories = get_categories( array(
 						'orderby' => 'name',
@@ -45,10 +45,10 @@ class="page-header page-header--work bg--dark" >
 				) );
 				echo '<div class="blog-categories">';
 				?><a href="<? echo get_site_url(); ?>/insights-for-research"><h6>All</h6></a>
-				<?php 
-		
+				<?php
+
 				foreach( $categories as $category ) {
-						$category_link = sprintf( 
+						$category_link = sprintf(
 								'<a class="blog-categories__link" href="%1$s" alt="%2$s">%3$s</a>',
 								esc_url( get_category_link( $category->term_id ) ),
 								esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
@@ -56,8 +56,8 @@ class="page-header page-header--work bg--dark" >
 						);
 
 						echo '<h6>' . sprintf( esc_html__( '%s', 'textdomain' ), $category_link ) . '</h6> ';
-						
-				} 
+
+				}
 				echo '</div>';
 				?>
 
@@ -99,7 +99,7 @@ class="page-header page-header--work bg--dark" >
 							<?php endif; ?>
 						</div>
 						<div class="blog-tile__details">
-							<h6><?php $category_detail = get_the_category(); 
+							<h6><?php $category_detail = get_the_category();
 							foreach($category_detail as $cd){
 								echo $cd->cat_name;
 								}
@@ -115,24 +115,24 @@ class="page-header page-header--work bg--dark" >
 				</article>
 
 			<?php endwhile; ?>
-			
+
 
 		</div>
-					
-					
 
-			
+
+
+
 
 
 			<!-- The pagination component -->
 <div class="row justify-content-center">
 			<?php global $wp_query; // you can remove this line if everything works for you
-			
+
 			// don't display the button if there are not enough posts
 			if (  $wp_query->max_num_pages > 1 )
-				echo '<div class="btn btn--outline loadmore m-auto">More posts</div>'; 
+				echo '<div class="btn btn--outline loadmore m-auto">More posts</div>';
 			?>
-		
+
 </div>
 </div><!-- Container end -->
 

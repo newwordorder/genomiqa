@@ -46,12 +46,13 @@ if( !empty($image) ):
   </div>
 </div>
 
-
-
 </section>
 
     <?php get_template_part( 'page-templates/blocks' ); ?>
 
+<?php get_template_part('page-templates/related-products'); ?>
+
 <?php endwhile; // end of the loop. ?>
+
 
 <?php get_footer(); ?>
