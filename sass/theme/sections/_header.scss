@@ -8,7 +8,6 @@
   left: 0;
   width: 100%;
   padding: 20px 15px;
-  border-bottom:1px solid #efefef;
   z-index: 1020;
   color: #fff;
   /* animation */
@@ -101,6 +100,7 @@
   max-width: 1140px;
   margin: 0 auto;
   width: 100%;
+  padding: 0px 15px;
 
   @include media-breakpoint-down(sm) {
     padding: 15px;

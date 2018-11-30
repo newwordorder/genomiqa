@@ -94,27 +94,40 @@ var slider = function slider(_ref) {
 
   output.classList.add("row");
 
-
   imgContainer.classList.add("imgContainer--1");
 
   imgContainer.classList.add("col-12");
 
-  imgContainer.classList.add("col-lg-4");
+  imgContainer.classList.add("col-md-6");
   
   output.appendChild(contentContainer);
 
+  var container2 = makeDiv();
 
+  container2.classList.add("col-md-6");
 
-  output.appendChild(imgContainer);
+  var container3 = makeDiv();
+
+  container3.classList.add("row");
+
+  container3.classList.add("h-100");
+
+  container2.classList.add("imgParent");
+
+  container3.appendChild(imgContainer);
 
   imgContainer2.classList.add("imgContainer--2");
   
   imgContainer2.classList.add("col-12");
 
 
-  imgContainer2.classList.add("col-lg-4");
+  imgContainer2.classList.add("col-md-6");
 
-  output.appendChild(imgContainer2);
+  container3.appendChild(imgContainer2);
+
+  container2.appendChild(container3);
+
+  output.appendChild(container2);
 
   output.appendChild(makeControls());
 
@@ -123,14 +136,14 @@ var slider = function slider(_ref) {
 };
 
 var init = function init() {
-  var slides = Array.from(document.querySelector(".contentContainer").children);
 
+  var slides = Array.from(document.querySelector(".contentContainer").children);
   var imgs1 = Array.from(document.querySelector(".imgContainer--1").children);
   var imgs2 = Array.from(document.querySelector(".imgContainer--2").children);
 
   var index = 0;
 
-  slides[index].classList.add("active");
+  slides[index].classList.add("activeSlide");
   imgs1[index].classList.add("active");
   imgs2[index].classList.add("active");
 
@@ -146,8 +159,9 @@ var init = function init() {
     index = slideBackwards(index, imgs1);
 
     slides.map(function (slide) {
-      return slide.classList.remove("active");
+      return slide.classList.remove("activeSlide");
     });
+
     imgs1.map(function (slide) {
       return slide.classList.remove("active");
     });
@@ -155,7 +169,7 @@ var init = function init() {
       return slide.classList.remove("active");
     });
 
-    slides[index].classList.add("active");
+    slides[index].classList.add("activeSlide");
     imgs1[index].classList.add("active");
     imgs2[index].classList.add("active");
   });
@@ -164,7 +178,7 @@ var init = function init() {
     index = slideForwards(index, imgs1);
 
     slides.map(function (slide) {
-      return slide.classList.remove("active");
+      return slide.classList.remove("activeSlide");
     });
     imgs1.map(function (slide) {
       return slide.classList.remove("active");
@@ -173,7 +187,7 @@ var init = function init() {
       return slide.classList.remove("active");
     });
 
-    slides[index].classList.add("active");
+    slides[index].classList.add("activeSlide");
     imgs1[index].classList.add("active");
     imgs2[index].classList.add("active");
   });

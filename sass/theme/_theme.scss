@@ -334,6 +334,7 @@ section {
 .blog-tile {
   display: block;
   margin-bottom: 30px;
+  
 
   * {
     transition: 0.2s;
@@ -609,5 +610,28 @@ section {
   input{
     border: 1px solid #efefef !important;
     border-radius:0px;
+  }
+}
+
+.blog-tile__details{
+  padding:1rem;
+}
+
+.blog-tile--inner{
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+  background-color:#fff;
+  svg{
+    margin:unset !important;
+  }
+}
+
+.blog-categories{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  *{
+    margin:0px 1rem;
+    color:$dark;
   }
 }
