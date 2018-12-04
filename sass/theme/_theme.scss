@@ -641,3 +641,16 @@ section {
     }
   }
 }
+
+ .dropdown.show{
+  .menu-item{
+    margin-left:15px !important;
+    .nav-link{
+      color:#000 !important;
+    }
+  }
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}

@@ -1595,7 +1595,6 @@ var Dropdown = function ($$$1) {
       $$$1(this._element).on(Event.CLICK, function (event) {
         event.preventDefault();
         event.stopPropagation();
-
         _this.toggle();
       });
     };
