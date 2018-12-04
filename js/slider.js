@@ -98,13 +98,13 @@ var slider = function slider(_ref) {
 
   imgContainer.classList.add("col-12");
 
-  imgContainer.classList.add("col-md-6");
+  imgContainer.classList.add("col-lg-6");
   
   output.appendChild(contentContainer);
 
   var container2 = makeDiv();
 
-  container2.classList.add("col-md-6");
+  container2.classList.add("col-lg-6");
 
   var container3 = makeDiv();
 
@@ -121,7 +121,7 @@ var slider = function slider(_ref) {
   imgContainer2.classList.add("col-12");
 
 
-  imgContainer2.classList.add("col-md-6");
+  imgContainer2.classList.add("col-lg-6");
 
   container3.appendChild(imgContainer2);
 
