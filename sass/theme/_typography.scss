@@ -78,6 +78,10 @@ p {
   font-size: 4.5rem;
   line-height: 4.5rem;
   margin-bottom: 0;
+  @media screen and (max-width:768px){
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 p{

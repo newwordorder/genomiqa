@@ -16986,6 +16986,10 @@ p {
   font-size: 4.5rem;
   line-height: 4.5rem;
   margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .page-title {
+      font-size: 2rem;
+      line-height: 3rem; } }
 
 p {
   font-size: 1rem;
@@ -17046,6 +17050,9 @@ hr.short {
       background: #fff; } }
   #header .header__navigation .active > .nav-link {
     color: white; }
+    @media (max-width: 767.98px) {
+      #header .header__navigation .active > .nav-link {
+        color: #000; } }
   #header .header__navigation li {
     margin-left: 30px; }
   #header .header__navigation a {
@@ -17056,10 +17063,15 @@ hr.short {
     font-family: "Moderat Bold", sans-serif; }
     @media (max-width: 767.98px) {
       #header .header__navigation a {
+        color: #000;
         margin-left: 0px;
-        padding: 20px 0px; } }
+        padding: 12px 0px; } }
     #header .header__navigation a:hover {
       color: white; }
+  @media (max-width: 767.98px) {
+    #header .header__navigation .btn,
+    #header .header__navigation .wpcf7 input[type=submit], .wpcf7 #header .header__navigation input[type=submit] {
+      padding: 0em 1.6em; } }
 
 #header .logo {
   margin-bottom: 0; }
@@ -17150,7 +17162,10 @@ hr.short {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start; }
       .header-nav.is-active {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -17264,6 +17279,24 @@ hr.short {
 
 .page-header * {
   color: #fff; }
+
+@media screen and (max-width: 768px) {
+  .page-header--page {
+    min-height: unset !important;
+    height: unset !important; } }
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    padding: 100px 0 50px !important; } }
+
+@media screen and (max-width: 768px) {
+  .page-header--home {
+    padding: 0px !important; } }
+
+@media screen and (max-width: 768px) {
+  #sub-header .container {
+    -webkit-transform: unset;
+            transform: unset; } }
 
 #footer {
   background: #fff;
@@ -17395,6 +17428,12 @@ hr.short {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  @media screen and (max-width: 992px) {
+    .img {
+      min-height: 100%;
+      max-height: unset;
+      min-width: 100%;
+      max-width: unset; } }
 
 /* Controls */
 .button {
@@ -18182,6 +18221,14 @@ section.bg-effect--ken-burns {
   .blog-categories * {
     margin: 0px 1rem;
     color: #3B4051; }
+  @media screen and (max-width: 768px) {
+    .blog-categories {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .blog-categories * {
+        margin: auto; } }
 
 /*
 * Use existing Bootstrap 4 classes and

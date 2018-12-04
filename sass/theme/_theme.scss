@@ -634,4 +634,10 @@ section {
     margin:0px 1rem;
     color:$dark;
   }
+  @media screen and (max-width:768px) {
+    flex-direction:column;
+    *{
+      margin:auto;
+    }
+  }
 }
