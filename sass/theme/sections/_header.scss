@@ -30,6 +30,9 @@
 
     .active > .nav-link {
       color: rgba($white,1);
+      @include media-breakpoint-down(sm) {
+      color:#000;
+      }
     }
 
     li {
@@ -44,12 +47,19 @@
 
 
       @include media-breakpoint-down(sm) {
+        color:#000;
         margin-left: 0px;
-        padding: 20px 0px;
+        padding: 12px 0px;
       }
 
       &:hover {
         color: rgba($white,1);
+      }
+    }
+
+    .btn{
+      @include media-breakpoint-down(sm) {
+        padding:0em 1.6em;
       }
     }
   }
@@ -131,6 +141,7 @@
   @include media-breakpoint-down(sm) {
     display: none;
     flex-direction: column;
+    align-items:start;
     &.is-active {
       display: flex;
     }
@@ -263,5 +274,30 @@
 .page-header{
   *{
     color:#fff;
+  }
+
+  &--page{
+    @media screen and (max-width:768px) {
+      min-height:unset !important;
+      height:unset !important;
+    }
+  
+  }
+
+  @media screen and (max-width:768px) {
+    padding: 100px 0 50px !important;
+  }
+}
+
+.page-header--home{
+  @media screen and (max-width:768px) {
+    padding: 0px !important;
+  }
+}
+#sub-header{
+  .container{
+    @media screen and (max-width:768px) {
+      transform:unset;
+    }
   }
 }
