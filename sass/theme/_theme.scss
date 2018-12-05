@@ -646,7 +646,10 @@ section {
   .menu-item{
     margin-left:15px !important;
     .nav-link{
-      color:#000 !important;
+      color:rgba(0,0,0,0.6)!important;
+      &:hover{
+        color:rgba(0,0,0,1)!important;
+      }
     }
   }
 }
