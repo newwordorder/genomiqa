@@ -27,6 +27,8 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/blocks/projects' );
          get_template_part( 'page-templates/blocks/text-text' );
          get_template_part( 'page-templates/blocks/product-block' );
+         get_template_part( 'page-templates/blocks/blog' );
+
 
       }
 
