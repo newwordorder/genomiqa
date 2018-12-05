@@ -1,4 +1,4 @@
-# genomiQa THeme 
+# genomiQa Theme 
 
 ## Latest Updates
 
