@@ -26,7 +26,7 @@ $fallbackImage = get_field('fallback_image');
 
 <section id="sub-header"
 
-class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+class="page-header bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
 data-overlay="<?php echo $imageOverlay ?>"
 >
 
