@@ -18083,6 +18083,9 @@ section.bg-effect--ken-burns {
   margin-bottom: 2rem;
   -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05); }
+  .product :before {
+    -webkit-transition: 600ms;
+    transition: 600ms; }
   .product:hover :before {
     opacity: 0.8;
     -webkit-transition: 600ms;

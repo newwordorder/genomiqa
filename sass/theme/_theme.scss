@@ -492,6 +492,10 @@ section {
   margin-bottom:2rem;
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
 
+  :before{
+    transition:600ms;
+
+  }
   &:hover{
     :before{
       opacity: 0.8;
