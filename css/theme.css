@@ -18157,10 +18157,10 @@ section.bg-effect--ken-burns {
     border: 1px solid #FFCB1F !important; }
   .wpcf7 input {
     border: none !important;
-    border-radius: 0; }
+    border-radius: 0 !important; }
   .wpcf7 textarea {
     border: none !important;
-    border-radius: 0; }
+    border-radius: 0 !important; }
   .wpcf7 .d-flex label {
     margin: 0px 10px; }
   .wpcf7 input[type="checkbox"] {
@@ -18190,7 +18190,7 @@ section.bg-effect--ken-burns {
 
 #wpcf7-f282-o2 input {
   border: 1px solid #efefef !important;
-  border-radius: 0px; }
+  border-radius: 0px !important; }
 
 .blog-tile__details {
   padding: 1rem; }
