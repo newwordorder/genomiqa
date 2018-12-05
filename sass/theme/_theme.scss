@@ -492,9 +492,16 @@ section {
   margin-bottom:2rem;
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
 
+  &:hover{
+    :before{
+      opacity: 0.8;
+      transition:600ms;
+    }
+  }
+
   &--tile {
     min-height: 18rem;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
   }
 
