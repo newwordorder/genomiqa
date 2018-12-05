@@ -9,30 +9,6 @@
  */
 
 ?>
-<section class="bg--dark space--md bg-effect--  ">
-
-<div class="container space-below--">
-
-	<div class="row align-items-center justify-content-center">
-
-		  <div class="col-md-8 text-center">
-			  <h2 style="text-align: center;">The whole is greater than the sum of its parts</h2>
-<p class="lead" style="text-align: center;">Access the full picture — talk to us today.</p>
-<p>&nbsp;</p>
-
-
-  <div class="buttons">
-
-	<a href="126" class="btn btn--outline">Contact Us </a>
-
-	</div>
-			</div>
-
-
-	</div>
-  </div>
-
-</section>
 
 <footer id="footer">
 		<div class="container text-center">
@@ -47,7 +23,9 @@
 								<p>© Copyright genomiQa PTY LTD </p>
 						</div>
 						<div class="col-sm-6 d-flex justify-content-end">
-								<p><a href="#">Privacy & data Policy</a></p>
+								<p class="px-2"><a href="#">Privacy & data Policy</a></p>
+								<p class="px-2"><a href="#">Terms & Conditions</a></p>
+
 						</div>
 				</div>
 </footer>

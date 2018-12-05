@@ -78,4 +78,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- Wrapper end -->
 
-<?php get_footer(); ?>
+<?php
+        get_template_part( 'page-templates/blocks/pre-footer-cta' );
+
+get_footer(); ?>

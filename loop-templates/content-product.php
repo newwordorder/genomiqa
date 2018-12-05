@@ -15,6 +15,6 @@
 
 	</div>
 	<a class="product--button" href="<?php echo get_permalink(); ?>">
-				<p>Learn more <i class="far fa-arrow-right"></i></p>
-</a>
+		<p>Learn more <i class="far fa-arrow-right"></i></p>
+	</a>
 </div>

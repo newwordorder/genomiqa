@@ -492,9 +492,20 @@ section {
   margin-bottom:2rem;
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
 
+  :before{
+    transition:600ms;
+
+  }
+  &:hover{
+    :before{
+      opacity: 0.8;
+      transition:600ms;
+    }
+  }
+
   &--tile {
     min-height: 18rem;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
   }
 
@@ -567,12 +578,12 @@ section {
 
   input{
     border: none !important;
-    border-radius:0;
+    border-radius:0 !important;
   }
 
   textarea{
     border: none !important;
-    border-radius:0;
+    border-radius:0 !important;
 
   }
   .d-flex{
@@ -609,7 +620,7 @@ section {
   }
   input{
     border: 1px solid #efefef !important;
-    border-radius:0px;
+    border-radius:0px !important;
   }
 }
 
@@ -646,7 +657,10 @@ section {
   .menu-item{
     margin-left:15px !important;
     .nav-link{
-      color:#000 !important;
+      color:rgba(0,0,0,0.6)!important;
+      &:hover{
+        color:rgba(0,0,0,1)!important;
+      }
     }
   }
 }

@@ -26,7 +26,7 @@ $fallbackImage = get_field('fallback_image');
 
 <section id="sub-header"
 
-class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+class="page-header bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
 data-overlay="<?php echo $imageOverlay ?>"
 >
 
@@ -75,6 +75,8 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 </section>
 
-<?php get_template_part( 'page-templates/blocks' ); ?>
+<?php get_template_part( 'page-templates/blocks' );
+        get_template_part( 'page-templates/blocks/pre-footer-cta' );
+        ?>
 
 <?php get_footer();
