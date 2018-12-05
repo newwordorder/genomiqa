@@ -138,4 +138,7 @@ class="page-header page-header--work bg--dark" >
 
 </section>
 
-<?php get_footer(); ?>
+<?php 
+        get_template_part( 'page-templates/blocks/pre-footer-cta' );
+
+get_footer(); ?>

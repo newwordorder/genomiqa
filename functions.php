@@ -76,3 +76,5 @@ require get_template_directory() . '/inc/editor.php';
  * Load more button.
  */
 require get_template_directory() . '/inc/loadmore.php';
+
+require get_template_directory() . '/inc/acf_options.php';
