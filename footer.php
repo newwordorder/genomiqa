@@ -47,7 +47,9 @@
 								<p>© Copyright genomiQa PTY LTD </p>
 						</div>
 						<div class="col-sm-6 d-flex justify-content-end">
-								<p><a href="#">Privacy & data Policy</a></p>
+								<p class="px-2"><a href="#">Privacy & data Policy</a></p>
+								<p class="px-2"><a href="#">Terms & Conditions</a></p>
+
 						</div>
 				</div>
 </footer>
