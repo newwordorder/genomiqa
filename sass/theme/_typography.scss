@@ -122,7 +122,7 @@ a{
   color:#6B6D9B;
 }
 
-a:not([href]):not([tabindex]){
+a:not([href]):not([tabindex]):not(.btn){
   color:#6B6D9B;
   &:hover{
     color:#5D5E86;
