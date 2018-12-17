@@ -17016,9 +17016,9 @@ hr.short {
 a {
   color: #6B6D9B; }
 
-a:not([href]):not([tabindex]) {
+a:not([href]):not([tabindex]):not(.btn) {
   color: #6B6D9B; }
-  a:not([href]):not([tabindex]):hover {
+  a:not([href]):not([tabindex]):not(.btn):hover {
     color: #5D5E86; }
 
 #header {
@@ -18254,6 +18254,13 @@ section.bg-effect--ken-burns {
 
 .dropdown:hover > .dropdown-menu {
   display: block; }
+
+input:not([class*='col-']),
+select:not([class*='col-']),
+.input-select:not([class*='col-']),
+textarea:not([class*='col-']),
+button[type="submit"]:not([class*='col-']) {
+  width: auto; }
 
 /*
 * Use existing Bootstrap 4 classes and
