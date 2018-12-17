@@ -18255,6 +18255,13 @@ section.bg-effect--ken-burns {
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
+input:not([class*='col-']),
+select:not([class*='col-']),
+.input-select:not([class*='col-']),
+textarea:not([class*='col-']),
+button[type="submit"]:not([class*='col-']) {
+  width: auto; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

@@ -668,3 +668,7 @@ section {
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
+
+input:not([class*='col-']), select:not([class*='col-']), .input-select:not([class*='col-']), textarea:not([class*='col-']), button[type="submit"]:not([class*='col-']) {
+  width: auto;
+}
