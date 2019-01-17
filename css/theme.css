@@ -9329,10 +9329,8 @@ body:not(.dropdowns--hover) .dropdown.dropdown--hover:hover > .dropdown__contain
 
 /**! 12. Form Elements **/
 form {
-  max-width: 100%; }
-
-form + form {
-  margin-top: 30px; }
+  max-width: 100%;
+  margin: 1rem; }
 
 form:before,
 form:after {
@@ -15020,9 +15018,7 @@ button.btn,
 input[type="submit"].btn,
 .wpcf7 input[type="submit"][type=submit] {
   font-size: 0.85714286em;
-  font-weight: 700;
-  padding-left: 0;
-  padding-right: 0; }
+  font-weight: 700; }
 
 button.btn.btn--primary,
 input[type="submit"].btn.btn--primary,
@@ -15092,7 +15088,8 @@ select:not([class*='col-']),
 .input-select:not([class*='col-']),
 textarea:not([class*='col-']),
 button[type="submit"]:not([class*='col-']) {
-  width: 100%; }
+  /*   width: 100%;
+ */ }
 
 input[type],
 select,
@@ -17813,7 +17810,19 @@ section.bg-effect--ken-burns {
   margin-right: auto; }
 
 .buttons {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .buttons .btn,
+  .buttons .wpcf7 input[type=submit], .wpcf7 .buttons input[type=submit] {
+    margin: 1rem; }
 
 .btn,
 .wpcf7 input[type=submit] {

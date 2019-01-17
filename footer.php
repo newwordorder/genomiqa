@@ -46,7 +46,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/ytplayer.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aos.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/slider.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/slider.min.js"></script>
 
 <script>
 $('body').on('mouseenter mouseleave','.dropdown',function(e){

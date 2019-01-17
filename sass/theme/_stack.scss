@@ -1262,9 +1262,10 @@ body:not(.dropdowns--hover) .dropdown.dropdown--hover:hover > .dropdown__contain
 /**! 12. Form Elements **/
 form {
   max-width: 100%;
+  margin: 1rem;
 }
 form + form {
-  margin-top: 30px;
+
 }
 form:before,
 form:after {
@@ -7151,8 +7152,7 @@ button.btn,
 input[type="submit"].btn {
   font-size: 0.85714286em;
   font-weight: 700;
-  padding-left: 0;
-  padding-right: 0;
+
 }
 button.btn.btn--primary,
 input[type="submit"].btn.btn--primary {
@@ -7220,8 +7220,8 @@ select:not([class*='col-']),
 .input-select:not([class*='col-']),
 textarea:not([class*='col-']),
 button[type="submit"]:not([class*='col-']) {
-  width: 100%;
-}
+/*   width: 100%;
+ */}
 input[type],
 select,
 textarea {
