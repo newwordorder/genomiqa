@@ -68,7 +68,7 @@ $spaceBelow = $preFooterSetup['space_below'];
                 <div class="buttons">
                 <?php while( have_rows('buttons','options') ): the_row();
                     $buttonText = get_sub_field('button_text');
-                    $url = get_sub_field('url');
+                    $url = get_sub_field('pageurl');
                     $buttonStyle = get_sub_field('button_style');
                     ?>
 
@@ -93,7 +93,7 @@ $spaceBelow = $preFooterSetup['space_below'];
                     <div class="buttons">
                     <?php while( have_rows('buttons','options') ): the_row();
                         $buttonText = get_sub_field('button_text');
-                        $url = get_sub_field('url');
+                        $url = get_sub_field('pageurl');
                         $buttonStyle = get_sub_field('button_style');
                         ?>
 

@@ -21,6 +21,8 @@ var gulpSequence = require( 'gulp-sequence' );
 var replace = require( 'gulp-replace' );
 var autoprefixer = require( 'gulp-autoprefixer' );
 
+var babel = require("gulp-babel");
+
 // Configuration file to keep your code DRY
 var cfg = require( './gulpconfig.json' );
 var paths = cfg.paths;
@@ -100,6 +102,18 @@ gulp.task( 'watch', function() {
     //Inside the watch task.
     gulp.watch( paths.imgsrc + '/**', ['imagemin-watch'] );
 });
+
+gulp.task("js_babel", function () {
+    return gulp.src(['./js/slider.js', '!./js/slider.min.js'])
+      .pipe(babel())
+      .pipe( rename( { suffix: '.min' } ) )
+      .pipe(gulp.dest("./js"));
+  });
+  
+  
+  gulp.task('js_watch', function () {
+      gulp.watch( './js/slider.js', ['js_babel'] );
+  })
 
 /**
  * Ensures the 'imagemin' task is complete before reloading browsers
