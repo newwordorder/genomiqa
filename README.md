@@ -1,12 +1,12 @@
-# genomiQa Theme 
+# genomiQa Theme
 
 ## Edits
 
-- [ ] On insightsQ4 page - need to have a call to action to contact us for further information (Possibly need this for all product pages either the relevant order form or email to order
+- [x] Links to terms and conditions from the doctors page do not work.
 
-- [ ] Please find attached the "order forms" - these should be available from the order now link as well as on the resources page - there will be three versions one for CapeQ4, Gulf Q4 and Insights.
+- [x] Email to order
 
-- [ ] Also please make the current two brochures we have finalised available as PDF downloads from the relevant product and resources pages.
+- [x] Please find attached the "order forms" - these should be available from the order now link as well as on the resources page - there will be three versions one for CapeQ4, Gulf Q4 and Insights.
 
 - [x] On home page please change the image to an Asian or European Female - also this was going to scroll through?
 
@@ -32,8 +32,8 @@
 
 > Artificial intelligence and Max Kelsen page - read more about max Kelsen does not work
 
-> Links to terms and conditions from the doctors page do not work.
-
 > As we have a gulf Q4 order form and a CapeQ4 order form do we need two options for the order form button?
 
 > There is not an order form for insights Q4 - so we should have a note to say contact us for information on pricing and process?
+
+> Also please make the current two brochures we have finalised available as PDF downloads from the relevant product and resources pages.
