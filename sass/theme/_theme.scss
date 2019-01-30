@@ -1,7 +1,7 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-@import "stack";
-@import "typography";
-@import "sections/sections";
+@import 'stack';
+@import 'typography';
+@import 'sections/sections';
 
 body {
   background: $dark;
@@ -143,8 +143,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  .btn{
-    margin:1rem;
+  .btn {
+    margin: 1rem;
   }
 }
 
@@ -277,7 +277,7 @@ section {
     }
   }
 
-  padding: 200px 0 100px;
+  padding: 200px 0 0px;
   background-color: $dark;
 
   @include media-breakpoint-down(sm) {
@@ -340,7 +340,6 @@ section {
 .blog-tile {
   display: block;
   margin-bottom: 30px;
-  
 
   * {
     transition: 0.2s;
@@ -495,17 +494,16 @@ section {
 
 .product {
   position: relative;
-  margin-bottom:2rem;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
 
-  :before{
-    transition:600ms;
-
+  :before {
+    transition: 600ms;
   }
-  &:hover{
-    :before{
+  &:hover {
+    :before {
       opacity: 0.8;
-      transition:600ms;
+      transition: 600ms;
     }
   }
 
@@ -517,12 +515,12 @@ section {
 
   .entry-title {
     position: relative;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     a {
       color: #fff;
     }
     &:after {
-      content: "TM";
+      content: 'TM';
       font-size: 0.8rem;
       top: 0;
       position: absolute;
@@ -530,34 +528,34 @@ section {
     }
   }
 
-  .entry-subtitle{
-    z-index:3;
-    font-family:$moderat-Regular;
-    position:inherit;
+  .entry-subtitle {
+    z-index: 3;
+    font-family: $moderat-Regular;
+    position: inherit;
     font-size: 1.5em;
-    line-height:1.2;
+    line-height: 1.2;
   }
 
-  &--button{
-    background-color:#fff;
-    height:4rem;
-    position:relative;
-    width:100%;
-    bottom:0;
-    left:0;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+  &--button {
+    background-color: #fff;
+    height: 4rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    p{
-      svg{
-        position:absolute;
-        right:1rem;
-        top:50%;
-        transform:translateY(-50%);
-        color:$primary;
+    p {
+      svg {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $primary;
       }
-      width:calc(100% - 2rem);
+      width: calc(100% - 2rem);
       font-family: $moderat-Bold;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -566,106 +564,104 @@ section {
 }
 
 [data-overlay] *:not(.container):not(.background-image-holder) {
-   z-index: 3; 
+  z-index: 3;
 }
 
-.wpcf7{
-  max-width:unset !important;
+.wpcf7 {
+  max-width: unset !important;
 
-  *{
-    text-transform:uppercase;
-    font-family:$moderat-Bold;
+  * {
+    text-transform: uppercase;
+    font-family: $moderat-Bold;
     letter-spacing: 2px;
   }
 
-  .wpcf7-submit{
+  .wpcf7-submit {
     border: 1px solid $primary !important;
   }
 
-  input{
+  input {
     border: none !important;
-    border-radius:0 !important;
+    border-radius: 0 !important;
   }
 
-  textarea{
+  textarea {
     border: none !important;
-    border-radius:0 !important;
-
+    border-radius: 0 !important;
   }
-  .d-flex{
-    label{
-      margin:0px 10px;
+  .d-flex {
+    label {
+      margin: 0px 10px;
     }
   }
-  input[type="checkbox"]{
+  input[type='checkbox'] {
     -webkit-appearance: checkbox;
-    width:20px;
-    margin-right:10px;
+    width: 20px;
+    margin-right: 10px;
   }
-  input[type="submit"]{
-    margin:0px 10px;
-    color:$dark;
+  input[type='submit'] {
+    margin: 0px 10px;
+    color: $dark;
   }
-  .wpcf7-list-item{
-    display:flex;
+  .wpcf7-list-item {
+    display: flex;
   }
-  .wpcf7-list-item-label{
+  .wpcf7-list-item-label {
     display: flex;
     align-items: center;
   }
-  .ajax-loader{
-    display:none !important;
+  .ajax-loader {
+    display: none !important;
   }
 }
 
-#wpcf7-f282-o2{
-  input[type="submit"]{
-    margin:0px;
+#wpcf7-f282-o2 {
+  input[type='submit'] {
+    margin: 0px;
     border: 1px solid $primary !important;
-
   }
-  input{
+  input {
     border: 1px solid #efefef !important;
-    border-radius:0px !important;
+    border-radius: 0px !important;
   }
 }
 
-.blog-tile__details{
-  padding:1rem;
+.blog-tile__details {
+  padding: 1rem;
 }
 
-.blog-tile--inner{
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
-  background-color:#fff;
-  svg{
-    margin:unset !important;
+.blog-tile--inner {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  svg {
+    margin: unset !important;
   }
 }
 
-.blog-categories{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
-  *{
-    margin:0px 1rem;
-    color:$dark;
+.blog-categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  * {
+    margin: 0px 1rem;
+    color: $dark;
   }
-  @media screen and (max-width:768px) {
-    flex-direction:column;
-    *{
-      margin:auto;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    * {
+      margin: auto;
     }
   }
 }
 
- .dropdown.show{
-  .menu-item{
-    margin-left:15px !important;
-    .nav-link{
-      color:rgba(0,0,0,0.6)!important;
-      &:hover{
-        color:rgba(0,0,0,1)!important;
+.dropdown.show {
+  .menu-item {
+    margin-left: 15px !important;
+    .nav-link {
+      color: rgba(0, 0, 0, 0.6) !important;
+      &:hover {
+        color: rgba(0, 0, 0, 1) !important;
       }
     }
   }
@@ -675,6 +671,10 @@ section {
   display: block;
 }
 
-input:not([class*='col-']), select:not([class*='col-']), .input-select:not([class*='col-']), textarea:not([class*='col-']), button[type="submit"]:not([class*='col-']) {
+input:not([class*='col-']),
+select:not([class*='col-']),
+.input-select:not([class*='col-']),
+textarea:not([class*='col-']),
+button[type='submit']:not([class*='col-']) {
   width: auto;
 }
