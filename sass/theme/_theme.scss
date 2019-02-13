@@ -678,3 +678,11 @@ textarea:not([class*='col-']),
 button[type='submit']:not([class*='col-']) {
   width: auto;
 }
+
+.safari {
+  .pos-vertical-center {
+    @media screen and (min-width: 992px) {
+      top: unset;
+    }
+  }
+}

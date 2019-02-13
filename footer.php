@@ -56,7 +56,11 @@ $('body').on('mouseenter mouseleave','.dropdown',function(e){
     _d.toggleClass('show', _d.is(':hover'));
     $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
   },300);
-});</script>
+});
+if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
+   document.querySelector('.page').classList.add('safari');
+}
+</script>
 
 <script>
 	AOS.init();
