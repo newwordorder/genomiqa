@@ -23,8 +23,8 @@
 								<p>© Copyright genomiQa PTY LTD </p>
 						</div>
 						<div class="col-sm-6 d-flex justify-content-end">
-								<p class="px-2"><a href="#">Privacy Policy</a></p>
-								<p class="px-2"><a href="#">Terms & Conditions</a></p>
+								<p class="px-2"><a href="<?php echo get_home_url(); ?>/privacy-policy/">Privacy Policy</a></p>
+								<p class="px-2"><a href="<?php echo get_home_url(); ?>/legals/">Terms & Conditions</a></p>
 
 						</div>
 				</div>
@@ -56,7 +56,11 @@ $('body').on('mouseenter mouseleave','.dropdown',function(e){
     _d.toggleClass('show', _d.is(':hover'));
     $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
   },300);
-});</script>
+});
+if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
+   document.querySelector('.page').classList.add('safari');
+}
+</script>
 
 <script>
 	AOS.init();

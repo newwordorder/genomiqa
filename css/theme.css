@@ -17895,7 +17895,7 @@ section.bg-effect--ken-burns {
       margin-top: 30px; } }
 
 .page-header {
-  padding: 200px 0 100px;
+  padding: 200px 0 0px;
   background-color: #3B4051; }
   .page-header--home {
     padding: 400px 0;
@@ -18126,7 +18126,7 @@ section.bg-effect--ken-burns {
     .product .entry-title a {
       color: #fff; }
     .product .entry-title:after {
-      content: "TM";
+      content: 'TM';
       font-size: 0.8rem;
       top: 0;
       position: absolute;
@@ -18189,11 +18189,11 @@ section.bg-effect--ken-burns {
     border-radius: 0 !important; }
   .wpcf7 .d-flex label {
     margin: 0px 10px; }
-  .wpcf7 input[type="checkbox"] {
+  .wpcf7 input[type='checkbox'] {
     -webkit-appearance: checkbox;
     width: 20px;
     margin-right: 10px; }
-  .wpcf7 input[type="submit"] {
+  .wpcf7 input[type='submit'] {
     margin: 0px 10px;
     color: #3B4051; }
   .wpcf7 .wpcf7-list-item {
@@ -18210,7 +18210,7 @@ section.bg-effect--ken-burns {
   .wpcf7 .ajax-loader {
     display: none !important; }
 
-#wpcf7-f282-o2 input[type="submit"] {
+#wpcf7-f282-o2 input[type='submit'] {
   margin: 0px;
   border: 1px solid #FFCB1F !important; }
 
@@ -18270,6 +18270,10 @@ select:not([class*='col-']),
 textarea:not([class*='col-']),
 button[type="submit"]:not([class*='col-']) {
   width: auto; }
+
+@media screen and (min-width: 992px) {
+  .safari .pos-vertical-center {
+    top: unset; } }
 
 /*
 * Use existing Bootstrap 4 classes and
